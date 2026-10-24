@@ -1,10 +1,26 @@
 {
-  "updated": "October 7, 2026",
+  "updated": "October 24, 2026",
   "contact": "aadi@elevatr.app",
   "sections": [
     {
+      "title": "Versions covered",
+      "text": "This policy covers Degree 1.1 and later, including the update prepared for App Review on October 24, 2026. Degree 1.0 does not contain advertising or analytics; the advertising and optional analytics sections apply from version 1.1."
+    },
+    {
       "title": "Your readings stay on your device",
-      "text": "Degree processes hinge readings, accelerometer and rotation readings on your device to display angles and score flicks. Flick sensing runs only during an attempt while Degree is active. Readings and flick scores are not sent to the developer and are not saved as a history. Degree has no account, advertising, tracking or third-party analytics."
+      "text": "Degree processes hinge readings, accelerometer and rotation readings on your device to display angles and score flicks. Flick sensing runs only during an attempt while Degree is active. Readings and flick scores are not sent to the developer and are not saved as a history. Degree does not require an account. Hinge readings, motion samples, flick scores and shortcut logs are not supplied to the advertising SDK."
+    },
+    {
+      "title": "Advertising",
+      "text": "Degree uses Google AdMob and Google’s User Messaging Platform to show banner and full-screen ads and manage consent. At most one full-screen ad can appear per app launch, before the first game or Live Activity start. Shortcut setup does not trigger a full-screen ad. If an ad is unavailable, the feature remains usable. Degree requests non-personalized ads, disables Google’s publisher first-party ID, and does not request access to the advertising identifier through App Tracking Transparency. Non-personalized advertising still involves data processing: Google may receive IP addresses (which can indicate approximate location), device or app identifiers, ad impressions and interactions, crash logs, and performance information for ad delivery, fraud prevention, measurement and diagnostics. Consent messages appear where configured and required. When available, change your choices using Ad privacy options in Privacy & support. If the privacy check fails, Degree remains usable with ads paused. Google processes information under its own privacy policies, available at policies.google.com/privacy and policies.google.com/technologies/partner-sites."
+    },
+    {
+      "title": "Optional usage analytics",
+      "text": "You can choose to share usage analytics to help improve Degree. This is off until you choose Share usage and is separate from advertising privacy choices. Google Analytics 4, through the Firebase iOS SDK, processes a resettable app-installation identifier, app and device information (such as app version, device model and operating system), general geography derived from IP addresses, app visits and feature-use events. Shortcut events describe setup steps, configured event labels, action failures and completed test sequences. These records can show a journey for one installation; they are pseudonymous, not fully anonymous. Degree does not set a name, email or account User-ID, and analytics does not collect IDFA or IDFV. Raw hinge readings, motion samples, scores, wallpaper images, shortcut names and local run identifiers are not sent. Analytics data is not enabled for personalized advertising in Degree."
+    },
+    {
+      "title": "Your analytics choice",
+      "text": "Change Share usage analytics in Privacy & support at any time. Declining does not restrict Degree’s features. Turning it off stops future usage collection and resets local analytics data and its identifier; it does not erase information already received by Google. Degree does not backfill activity from before your current opt-in. Google retains and processes analytics information under the property’s configured retention settings and its applicable privacy terms; contact aadi@elevatr.app with privacy questions. Degree cannot inspect whether your personal fold automation is currently enabled. A completed verification test is evidence that Degree’s final shortcut action ran, not proof that a wallpaper was visible or a fold automation remains configured. iOS uninstall counts are not tracked for individual installations by Degree."
     },
     {
       "title": "Live Activities",
@@ -16,7 +32,7 @@
     },
     {
       "title": "Sharing and deleting",
-      "text": "Degree sends no run logs automatically. Export run log lets you choose whether and where to share a CSV copy. Your selected service then handles that copy under its own terms. Clear run log in the fold shortcut screen erases Degree’s local history and clears its temporary export file. It does not delete copies you previously shared, installed shortcuts or wallpapers. You can disable automations in Shortcuts and change your wallpaper in Settings. Local app data may be included in backups managed by your device; manage those backups separately. Deleting Degree removes its local app data."
+      "text": "Degree does not upload the contents of your run log. If you opt into usage analytics, bounded event labels and action outcomes are sent as described above; run identifiers, colors, precise local action timestamps and exported CSV contents are not sent as custom analytics data. Export run log lets you choose whether and where to share a CSV copy. Your selected service then handles that copy under its own terms. Clear run log in the fold shortcut screen erases Degree’s local history and clears its temporary export file. It does not delete copies you previously shared, installed shortcuts or wallpapers. You can disable automations in Shortcuts and change your wallpaper in Settings. Local app data may be included in backups managed by your device; manage those backups separately. Deleting Degree removes its local app data."
     },
     {
       "title": "Permissions and choices",

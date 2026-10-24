@@ -473,9 +473,9 @@ function Privacy() {
       <div className="notice">
         <strong>Version information</strong>
         <p>
-          This policy covers the released Degree 1.0 app, which does not include
-          advertising or analytics. An ad-supported update is in development;
-          its privacy information will be published when that update is ready.
+          Degree 1.1 introduces advertising and optional usage analytics. This policy
+          covers that update, including while it is awaiting App Review. Degree
+          1.0 remains ad-free and does not include analytics.
         </p>
       </div>
       <p className="fine">Updated {policy.updated}</p>
