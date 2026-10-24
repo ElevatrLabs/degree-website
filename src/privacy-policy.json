@@ -1,0 +1,34 @@
+{
+  "updated": "October 7, 2026",
+  "contact": "aadi@elevatr.app",
+  "sections": [
+    {
+      "title": "Your readings stay on your device",
+      "text": "Degree processes hinge readings, accelerometer and rotation readings on your device to display angles and score flicks. Flick sensing runs only during an attempt while Degree is active. Readings and flick scores are not sent to the developer and are not saved as a history. Degree has no account, advertising, tracking or third-party analytics."
+    },
+    {
+      "title": "Live Activities",
+      "text": "If you start a Live Activity, iOS displays the latest hinge reading and its time on system surfaces such as the Lock Screen and Dynamic Island. Degree does not send these readings to a server. The activity shows the last reading when Degree is in the background; it does not provide continuous background hinge sensing. Stop the activity using Degree’s Live Activity controls."
+    },
+    {
+      "title": "Optional shortcut experiment",
+      "text": "When you run a Degree Fold Probe shortcut, Degree stores up to 200 recent runs locally. Each entry contains a random run identifier, your configured event label, the selected color, the time Degree’s first action started and, when available, the time its final action finished. These are action times, not measurements of the system’s trigger time or hinge angle. Shortcuts receives a generated color image and a bundled sound to perform the actions you enable. Apple controls Shortcuts permissions, automation execution and wallpaper changes."
+    },
+    {
+      "title": "Sharing and deleting",
+      "text": "Degree sends no run logs automatically. Export run log lets you choose whether and where to share a CSV copy. Your selected service then handles that copy under its own terms. Clear run log in the fold shortcut screen erases Degree’s local history and clears its temporary export file. It does not delete copies you previously shared, installed shortcuts or wallpapers. You can disable automations in Shortcuts and change your wallpaper in Settings. Local app data may be included in backups managed by your device; manage those backups separately. Deleting Degree removes its local app data."
+    },
+    {
+      "title": "Permissions and choices",
+      "text": "Device motion is used to score a gentle flick and the return to rest. If motion readings are unavailable or restricted, Degree shows an unavailable message. The fold features need a supported folding iPhone and iOS 27.1 or later. You decide whether to start a Live Activity, import a shortcut, allow its actions, or enable an automation. No photo library, microphone, camera or location permission is requested by Degree."
+    },
+    {
+      "title": "Contact and external services",
+      "text": "Degree is an Elevatr app. For privacy or support questions, email aadi@elevatr.app. Sending email shares your address, message and any attachments with the support mailbox and the email providers involved. Share only information you want support to receive; you may request deletion of your support correspondence at the same address. Opening an external help link uses your browser and the destination website’s privacy practices. This policy describes the Degree app; website hosting and email services operate separately."
+    },
+    {
+      "title": "Policy updates",
+      "text": "This policy may be updated when Degree’s features or data practices change. The date above identifies this version."
+    }
+  ]
+}
