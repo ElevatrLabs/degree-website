@@ -5,10 +5,12 @@ const store = "https://apps.apple.com/us/app/degree-fold-flick/id6820294808";
 function Brand() {
   return (
     <a className="brand" href="/" aria-label="Degree home">
-      <span
+      <img
         className="brand-symbol"
-        role="img"
-        aria-label="Degree icon placeholder"
+        src="/degree-mark.png"
+        alt=""
+        width="36"
+        height="36"
       />
       degree<span>°</span>
     </a>

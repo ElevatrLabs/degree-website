@@ -84,21 +84,12 @@ a:hover {
   font-weight: 600;
 }
 .brand-symbol {
-  height: 25px;
-  width: 25px;
-  margin-right: 11px;
-  border: 2px solid currentColor;
-  border-radius: 50%;
-  position: relative;
-  opacity: 0.8;
-}
-.brand-symbol:after {
-  content: "";
-  position: absolute;
-  inset: 4px;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  opacity: 0.4;
+  height: 36px;
+  width: 36px;
+  margin-right: 6px;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 .brand > span:last-child {
   align-self: flex-start;
@@ -886,8 +877,8 @@ footer .brand {
   font-size: 23px;
 }
 footer .brand-symbol {
-  width: 19px;
-  height: 19px;
+  width: 30px;
+  height: 30px;
 }
 footer p {
   font-size: 11px;

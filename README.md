@@ -44,7 +44,7 @@ Use `https://degree.elevatr.app` as the App Store Marketing URL so the public li
 
 ## Content
 
-- The ring logo is a placeholder pending the final app icon choice.
+- The approved original **Off Center** mark is used in the header, footer, favicons, Apple touch icon and social preview. The transparent mark and white-backed app icon are packaged from the same original artwork as the native app.
 - The illustration and angle game are interactive web demonstrations, not live hardware readings.
 - The public app privacy text matches the released Degree 1.0 policy. An advertising update is in development and requires updated disclosures before release.
 - GitHub Pages logs visitor IP addresses for security, as explained on the privacy page.
