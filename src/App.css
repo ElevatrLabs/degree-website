@@ -1325,3 +1325,14 @@ footer p,
     margin-top: 10px;
   }
 }
+
+/* Paired wallpaper preview — explicitly separate from the released tools. */
+.beta-notice{margin:24px 0;color:var(--muted,#a9afb8);font-size:14px;max-width:440px;line-height:1.6}
+.wallpaper-stage{border:1px solid #ffffff16;border-radius:28px;overflow:hidden;background:#071126}
+.wallpaper-stage>img{display:block;width:100%;height:auto}
+.wallpaper-stage button{display:flex;justify-content:space-between;width:100%;background:#14213a;color:#dce7ff;border:0;padding:22px;font:inherit;cursor:pointer}
+.wallpaper-stage p{font-size:11px;color:#aab7ce;text-align:center;margin:15px}
+.wallpaper-collection{padding:100px 0}.pair-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:38px 24px;margin-top:48px}.pair-images{display:flex;gap:3px;overflow:hidden;border-radius:18px}.pair-images img{width:50%;height:auto;display:block}.pair-grid h3{font-size:21px;margin:16px 0 5px}.pair-grid p{font-size:12px;color:#a9afb8;text-transform:uppercase;letter-spacing:2px}.wallpaper-hero h1{font-size:clamp(46px,6vw,86px)}
+@media(max-width:650px){.pair-grid{grid-template-columns:1fr}.wallpaper-collection{padding:60px 0}}
+
+.wallpaper-hero .hero-copy>.nav-download{display:inline-flex;margin-top:18px}

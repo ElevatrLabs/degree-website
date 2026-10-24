@@ -4,7 +4,7 @@
   "sections": [
     {
       "title": "Versions covered",
-      "text": "This policy covers Degree 1.1 and later, including the update prepared for App Review on October 24, 2026. Degree 1.0 does not contain advertising or analytics; the advertising and optional analytics sections apply from version 1.1."
+      "text": "This policy covers Degree 1.1 and later. Version 1.2 adds paired wallpapers in TestFlight; version 1.1 is a separate update pending App Review. Degree 1.0 does not contain advertising or analytics. Advertising and optional analytics apply from version 1.1; wallpaper-specific practices apply from version 1.2."
     },
     {
       "title": "Your readings stay on your device",
@@ -12,11 +12,11 @@
     },
     {
       "title": "Advertising",
-      "text": "Degree uses Google AdMob and Google’s User Messaging Platform to show banner and full-screen ads and manage consent. At most one full-screen ad can appear per app launch, before the first game or Live Activity start. Shortcut setup does not trigger a full-screen ad. If an ad is unavailable, the feature remains usable. Degree requests non-personalized ads, disables Google’s publisher first-party ID, and does not request access to the advertising identifier through App Tracking Transparency. Non-personalized advertising still involves data processing: Google may receive IP addresses (which can indicate approximate location), device or app identifiers, ad impressions and interactions, crash logs, and performance information for ad delivery, fraud prevention, measurement and diagnostics. Consent messages appear where configured and required. When available, change your choices using Ad privacy options in Privacy & support. If the privacy check fails, Degree remains usable with ads paused. Google processes information under its own privacy policies, available at policies.google.com/privacy and policies.google.com/technologies/partner-sites."
+      "text": "Degree uses Google AdMob and Google’s User Messaging Platform to show banner and full-screen ads and manage consent. At most one full-screen ad can appear per app launch, before the first wallpaper preview, game or Live Activity start (wallpaper previews from version 1.2). Shortcut setup, background shortcuts and fold transitions do not trigger full-screen ads. If an ad is unavailable, the feature remains usable. Degree requests non-personalized ads, disables Google’s publisher first-party ID, and does not request access to the advertising identifier through App Tracking Transparency. Non-personalized advertising still involves data processing: Google may receive IP addresses (which can indicate approximate location), device or app identifiers, ad impressions and interactions, crash logs, and performance information for ad delivery, fraud prevention, measurement and diagnostics. Consent messages appear where configured and required. When available, change your choices using Ad privacy options in Privacy & support. If the privacy check fails, Degree remains usable with ads paused. Google processes information under its own privacy policies, available at policies.google.com/privacy and policies.google.com/technologies/partner-sites."
     },
     {
       "title": "Optional usage analytics",
-      "text": "You can choose to share usage analytics to help improve Degree. This is off until you choose Share usage and is separate from advertising privacy choices. Google Analytics 4, through the Firebase iOS SDK, processes a resettable app-installation identifier, app and device information (such as app version, device model and operating system), general geography derived from IP addresses, app visits and feature-use events. Shortcut events describe setup steps, configured event labels, action failures and completed test sequences. These records can show a journey for one installation; they are pseudonymous, not fully anonymous. Degree does not set a name, email or account User-ID, and analytics does not collect IDFA or IDFV. Raw hinge readings, motion samples, scores, wallpaper images, shortcut names and local run identifiers are not sent. Analytics data is not enabled for personalized advertising in Degree."
+      "text": "You can choose to share usage analytics to help improve Degree. This is off until you choose Share usage and is separate from advertising privacy choices. Google Analytics 4, through the Firebase iOS SDK, processes a resettable app-installation identifier, app and device information (such as app version, device model and operating system), general geography derived from IP addresses, app visits and feature-use events. From version 1.2, bounded wallpaper scene IDs, intact/transformed preview states, live-versus-demo input, sound choices, image-share completion, and ad placement/outcome events help measure the wallpaper journey. These are app interactions, not a background fold sensor. Shortcut events describe setup steps, configured event labels, action failures and completed test sequences. These records can show a journey for one installation; they are pseudonymous, not fully anonymous. Degree does not set a name, email or account User-ID, and analytics does not collect IDFA or IDFV. Raw hinge readings, motion samples, scores, wallpaper images, shortcut names and local run identifiers are not sent. Analytics data is not enabled for personalized advertising in Degree."
     },
     {
       "title": "Your analytics choice",
@@ -27,8 +27,8 @@
       "text": "If you start a Live Activity, iOS displays the latest hinge reading and its time on system surfaces such as the Lock Screen and Dynamic Island. Degree does not send these readings to a server. The activity shows the last reading when Degree is in the background; it does not provide continuous background hinge sensing. Stop the activity using Degree’s Live Activity controls."
     },
     {
-      "title": "Optional shortcut experiment",
-      "text": "When you run a Degree Fold Probe shortcut, Degree stores up to 200 recent runs locally. Each entry contains a random run identifier, your configured event label, the selected color, the time Degree’s first action started and, when available, the time its final action finished. These are action times, not measurements of the system’s trigger time or hinge angle. Shortcuts receives a generated color image and a bundled sound to perform the actions you enable. Apple controls Shortcuts permissions, automation execution and wallpaper changes."
+      "title": "Wallpapers and optional shortcuts",
+      "text": "From version 1.2, Degree bundles paired wallpaper artwork and saves your scene and sound choices locally. Previewing images does not access your Photos library. Sharing an image sends it only to the destination you choose in the system share sheet. Degree shortcuts return either a bundled intact/transformed image or a generated diagnostic color image, plus the selected sound. Up to 200 recent runs are stored locally: random run ID, configured event label, color or scene/appearance, action start time and final-action completion time. These are action times, not system trigger times or measured hinge angles. Apple controls Shortcuts permissions, automation execution and wallpaper changes. Degree cannot directly change system wallpaper or silently enable an automation."
     },
     {
       "title": "Sharing and deleting",
@@ -36,7 +36,7 @@
     },
     {
       "title": "Permissions and choices",
-      "text": "Device motion is used to score a gentle flick and the return to rest. If motion readings are unavailable or restricted, Degree shows an unavailable message. The fold features need a supported folding iPhone and iOS 27.1 or later. You decide whether to start a Live Activity, import a shortcut, allow its actions, or enable an automation. No photo library, microphone, camera or location permission is requested by Degree."
+      "text": "Device motion is used to score a gentle flick and the return to rest. If motion readings are unavailable or restricted, Degree shows an unavailable message. The fold features need a supported folding iPhone and iOS 27.1 or later. You decide whether to start a Live Activity, import a shortcut, allow its actions, or enable an automation. From version 1.2, saving a wallpaper through the system share sheet may request permission to add an image to Photos. Degree does not read your photo library. No microphone, camera or location permission is requested."
     },
     {
       "title": "Contact and external services",

@@ -5,7 +5,7 @@ const origin = process.env.SITE_URL?.replace(/\/$/, "");
 if (origin && !/^https:\/\/[a-z0-9.-]+(?::[0-9]+)?$/i.test(origin))
   throw new Error("SITE_URL must be an HTTPS origin without a path");
 const pages = [
-  ["", "Degree — A new angle on your iPhone"],
+  ["", "Degree — Perfect. Until you fold."],
   ["privacy", "Degree — Privacy policy"],
   ["support", "Degree — Support"],
 ];

@@ -174,7 +174,7 @@ function AngleStage() {
 const faqs = [
   [
     "Do I need a folding iPhone?",
-    "No. On other supported iPhones, Degree becomes a flick detector. Hold your phone securely, make a gentle wrist flick, then settle again for a score from 0 to 100. Fold readings and the angle game require a supported folding iPhone.",
+    "No. The 1.2 wallpaper preview works on all supported iPhones with a demo slider and static image sharing. The current App Store app includes a flick detector on conventional iPhones. Hold your phone securely, make a gentle wrist flick, then settle again for a score from 0 to 100. Fold readings and the angle game require a supported folding iPhone.",
   ],
   [
     "Is Degree a precision measuring tool?",
@@ -186,7 +186,7 @@ const faqs = [
   ],
   [
     "Can folding change my wallpaper?",
-    "Degree prepares a color image and a sound for an optional Shortcuts experiment. You import the shortcut, select your wallpaper and enable an available automation yourself. Fold triggers and their timing depend on your device and iOS. Degree does not silently install automations or promise an exact trigger angle.",
+    "Degree 1.2 prepares your selected pair’s intact or transformed image and sound. The older color-image experiment remains in Tools. You import the shortcut, select your wallpaper and enable an available automation yourself. Fold triggers and their timing depend on your device and iOS. Degree does not silently install automations or promise an exact trigger angle.",
   ],
   [
     "What happens to my readings?",
@@ -208,254 +208,40 @@ function FAQs() {
     </div>
   );
 }
+const pairs = [
+  ["glass", "Sapphire"], ["porcelain", "Porcelain"], ["ice", "Deep freeze"],
+  ["paper", "Paper sun"], ["marble", "Marble loop"], ["moon", "Moonfall"],
+  ["bloom", "Soft landing"], ["prism", "Spectrum"], ["vinyl", "Broken record"], ["arch", "After the arch"],
+];
 function Landing() {
-  return (
-    <>
-      <section className="hero">
-        <div className="hero-copy">
-          <div className="eyebrow">
-            <i className="status-dot" /> A LITTLE MORE PLAY. A NEW PERSPECTIVE.
-          </div>
-          <h1>
-            A new angle
-            <br />
-            on your <em>iPhone.</em>
-          </h1>
-          <p>
-            Turn a fold into a number. A flick into a score.
-            <br />
-            Explore the small movements that make your phone feel a little more
-            alive.
-          </p>
-          <StoreLink />
-          <div className="hero-meta">
-            <span>Free to download</span>
-            <span>iOS 27.0+</span>
-          </div>
-          <a className="explore" href="#experience">
-            SCROLL TO EXPLORE <span>↓</span>
-          </a>
-        </div>
-        <AngleStage />
-      </section>
-      <div className="intro-line">
-        <span>BUILT AROUND A SIMPLE IDEA</span>
-        <p>
-          Your phone moves.
-          <br />
-          <span>Make something of it.</span>
-        </p>
-        <span className="intro-mark" aria-hidden="true">
-          ↗
-        </span>
-      </div>
-      <section id="experience" className="experience">
-        <div className="section-intro">
-          <div className="eyebrow">01 — THE EXPERIENCE</div>
-          <h2>
-            Curiosity,
-            <br />
-            in motion.
-          </h2>
-          <p>
-            One simple screen. A few delightful ways to see what your iPhone can
-            do.
-          </p>
-        </div>
-        <div className="feature-stories">
-          <article className="feature-story">
-            <div className="story-number">01</div>
-            <div>
-              <span className="mini-label">ON SUPPORTED FOLDING IPHONES</span>
-              <h3>Every degree, revealed.</h3>
-              <p>
-                Watch your hinge angle change as you fold. A responsive device
-                illustration follows along, while the layout keeps the readout
-                clear of the fold.
-              </p>
-              <div className="inline-stat">
-                <strong>
-                  0<span>—</span>180<span>°</span>
-                </strong>
-                <span>
-                  A fresh perspective,
-                  <br />
-                  from closed to fully open.
-                </span>
-              </div>
-            </div>
-          </article>
-          <article className="feature-story">
-            <div className="story-number">02</div>
-            <div>
-              <span className="mini-label">THE ANGLE GAME</span>
-              <h3>Find your sweet spot.</h3>
-              <p>
-                A target angle. A live difference. Fold until you find the right
-                position, then hear a small sound of success. The whole
-                challenge stays on one screen.
-              </p>
-              <div className="game-strip">
-                <span>
-                  TARGET <b>75°</b>
-                </span>
-                <div className="game-track">
-                  <i />
-                </div>
-                <span className="warm">3° TO GO</span>
-              </div>
-            </div>
-          </article>
-          <article className="feature-story">
-            <div className="story-number">03</div>
-            <div>
-              <span className="mini-label">ON OTHER IPHONES</span>
-              <h3>No fold? Give it a flick.</h3>
-              <p>
-                A gentle wrist flick, a return to rest, and a score from 0 to
-                100. Reset and have another go. More force isn't the goal; a
-                clean finish is.
-              </p>
-              <div className="flick-strip">
-                <svg
-                  viewBox="0 0 300 60"
-                  aria-label="Illustrative motion waveform"
-                >
-                  <path d="M0 30H55l8-3 8 6 9-3h15l8-15 9 36 10-49 11 56 12-40 9 17 10-5h136" />
-                </svg>
-                <span>
-                  86<small>/ 100</small>
-                </span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section className="beyond">
-        <div className="beyond-top">
-          <div className="eyebrow">02 — A LITTLE FURTHER</div>
-          <h2>
-            Small details.
-            <br />
-            More possibilities.
-          </h2>
-        </div>
-        <div className="beyond-grid">
-          <article>
-            <div
-              className="island-demo"
-              aria-label="Illustrative Live Activity"
-            >
-              <span className="island-dot" />
-              <span>
-                120<span className="warm">°</span>
-              </span>
-              <i />
-              <span className="island-wave">⌁</span>
-            </div>
-            <span className="mini-label">A GLANCE AWAY</span>
-            <h3>Take the angle with you.</h3>
-            <p>
-              Start a Live Activity to bring the latest reading to supported
-              Lock Screen and Dynamic Island surfaces.
-            </p>
-            <p className="fine">
-              Shows the last reading when Degree is in the background.
-            </p>
-          </article>
-          <article>
-            <div className="shortcut-demo" aria-hidden="true">
-              <span className="color-swatch a" />
-              <span className="color-swatch b" />
-              <span className="color-swatch c" />
-              <span className="sound-glyph">♪</span>
-            </div>
-            <span className="mini-label">FOR THE CURIOUS</span>
-            <h3>Make your own fold experiment.</h3>
-            <p>
-              Use a prepared shortcut to change a wallpaper color and play a
-              sound. Local run logs help you explore when its actions execute.
-            </p>
-            <p className="fine">
-              Requires user setup in Shortcuts. Available triggers vary.
-            </p>
-          </article>
-        </div>
-      </section>
-      <section id="compatibility" className="compatibility">
-        <div>
-          <div className="eyebrow">03 — YOUR IPHONE, YOUR WAY</div>
-          <h2>
-            Made to fold.
-            <br />
-            Happy to flick.
-          </h2>
-          <p>Degree adapts to the capabilities of your phone.</p>
-        </div>
-        <div className="compat-table">
-          <table>
-            <thead>
-              <tr>
-                <th>What you can do</th>
-                <th>
-                  Folding iPhone<small>iOS 27.1+</small>
-                </th>
-                <th>
-                  Other iPhones<small>iOS 27.0+</small>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ["Live hinge angle", true, false],
-                ["Angle game + illustration", true, false],
-                ["Hinge Live Activity", true, false],
-                ["Fold shortcut experiment", true, false],
-                ["Flick scoring", false, true],
-              ].map(([label, ...values]) => (
-                <tr key={String(label)}>
-                  <td>{label}</td>
-                  {values.map((v, i) => (
-                    <td key={i} className={v ? "available" : ""}>
-                      <span aria-hidden="true">{v ? "✓" : "—"}</span>
-                      <span className="sr-only">
-                        {v ? "Available" : "Not available"}
-                      </span>
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          <p className="fine">
-            Fold features require hardware and system support. Shortcut
-            automations are configured separately by you.
-          </p>
-        </div>
-      </section>
-      <section className="questions">
-        <div>
-          <div className="eyebrow">A FEW THINGS TO KNOW</div>
-          <h2>Good questions.</h2>
-          <a className="text-link" href="/support/">
-            Need a hand? ↗
-          </a>
-        </div>
-        <FAQs />
-      </section>
-      <section className="closing">
-        <span className="closing-orbit" aria-hidden="true" />
-        <div className="eyebrow">A NEW WAY TO LOOK AT IT</div>
-        <h2>
-          Go on.
-          <br />
-          Change your angle.
-        </h2>
+  const [broken, setBroken] = useState(false);
+  return <>
+    <section className="hero wallpaper-hero">
+      <div className="hero-copy">
+        <div className="eyebrow"><i className="status-dot" /> WALLPAPERS · TESTFLIGHT PREVIEW</div>
+        <h1>Perfect.<br /><em>Until you fold.</em></h1>
+        <p>Two sides to every wallpaper. A pristine picture when open. A beautiful fracture, fold or transformation on the other side.</p>
+        <a className="nav-download" href="#experience">Explore all ten pairs ↓</a>
+        <div className="beta-notice">The wallpaper collection is being tested in Degree 1.2. The App Store version currently offers angle and flick tools.</div>
         <StoreLink />
-        <p>Free on the App Store · iOS 27.0 or later</p>
-      </section>
-    </>
-  );
+      </div>
+      <div className="wallpaper-stage">
+        <img src={`/wallpapers/glass-${broken ? "broken" : "intact"}.jpg`} alt={broken ? "Sapphire glass sphere broken into fragments" : "A flawless sapphire glass sphere"} width="720" height="720" />
+        <button onClick={() => setBroken(!broken)} aria-pressed={broken}>{broken ? "Unfold · restore the picture" : "Fold · reveal the other side"} <span>↗</span></button>
+        <p>Interactive illustration · not a live hinge reading</p>
+      </div>
+    </section>
+    <section id="experience" className="wallpaper-collection">
+      <div className="section-intro"><div className="eyebrow">TEN SCENES. TWENTY IMAGES.</div><h2>A different kind<br />of before & after.</h2><p>Glass, ice, paper, stone and more. Every pair is bundled offline, ready to preview and make your own.</p></div>
+      <div className="pair-grid">{pairs.map(([id, title]) => <article key={id}><div className="pair-images"><img src={`/wallpapers/${id}-intact.jpg`} alt={`${title}, intact`} loading="lazy" width="420" height="420" /><img src={`/wallpapers/${id}-broken.jpg`} alt={`${title}, transformed`} loading="lazy" width="420" height="420" /></div><h3>{title}</h3><p>Intact / transformed</p></article>)}</div>
+    </section>
+    <section id="compatibility" className="beyond">
+      <div className="eyebrow">IN THE 1.2 PREVIEW</div><h2>Your wallpaper.<br />With a little personality.</h2>
+      <div className="beyond-grid"><article><h3>See it. Hear it.</h3><p>On a supported folding iPhone, the in-app preview follows the hinge. Choose Glass crack, Paper fold, Faaa… or no sound. Any iPhone running iOS 27.0+ can try the demo slider and share either image as a static wallpaper.</p></article><article><h3>Take it to your Home Screen.</h3><p>Prepared Opened and Closed shortcuts return the matching image and your chosen sound. Import both, choose a Photo wallpaper and enable the available automation in Shortcuts.</p><p className="fine">iOS controls automation timing. An exact 180° background trigger is not promised. Degree cannot directly change system wallpaper or silently enable an automation.</p></article></div>
+    </section>
+    <section className="experience"><div className="section-intro"><div className="eyebrow">THE TOOLS YOU ALREADY KNOW</div><h2>Keep your<br />playful side.</h2><p>The live angle, angle game, device illustration and Live Activity remain in Tools on supported folding iPhones. Other iPhones retain the gentle flick score. Background Live Activities show the last reading and time.</p><p>These angle and flick tools are available in the current App Store app.</p></div><AngleStage /></section>
+    <section className="questions"><div><div className="eyebrow">A FEW THINGS TO KNOW</div><h2>Good questions.</h2><a className="text-link" href="/support/">Visit support ↗</a></div><FAQs /></section>
+  </>;
 }
 function Privacy() {
   return (
@@ -473,8 +259,8 @@ function Privacy() {
       <div className="notice">
         <strong>Version information</strong>
         <p>
-          Degree 1.1 introduces advertising and optional usage analytics. This policy
-          covers that update, including while it is awaiting App Review. Degree
+          Degree 1.2 adds paired wallpapers in TestFlight; 1.1 introduces advertising and optional usage analytics. This policy
+          covers both versions, including the TestFlight preview and the separate 1.1 update awaiting App Review. Degree
           1.0 remains ad-free and does not include analytics.
         </p>
       </div>
@@ -552,6 +338,11 @@ function Support() {
         </ol>
       </section>
       <section>
+        <h2>Set up paired wallpapers · Degree 1.2 TestFlight</h2>
+        <ol><li>Choose a pair in the collection and tap Set up wallpapers. Pick your sound, including No sound if preferred.</li><li>Add both prepared copies: Opened uses the intact image; Closed uses the transformed image. Select an active Photo wallpaper during import and keep Show Preview off.</li><li>Run each shortcut once while unlocked, allow its actions, and use Run verification test in Degree. A completed test confirms the final action ran; visually check the wallpaper too.</li><li>In Shortcuts, edit each copy → Automation, then attach the corresponding device fold trigger if your OS offers it. Enable automatic execution and running while locked only as desired. App Is Opened is a different trigger.</li><li>Change the selected pair or sound in Degree to update future runs. Exact fold trigger angles and wallpaper-update timing are controlled by iOS. If the trigger is unavailable, use the shortcuts manually or share either image as a static wallpaper.</li></ol>
+        <p>The in-app live preview uses a small tolerance near 180°; that threshold does not control Home or Lock Screen automations. Other iPhones can use the demo slider. To stop wallpaper automation, disable the copies in Shortcuts.</p>
+      </section>
+      <section>
         <h2>Flicks, gently.</h2>
         <p>
           Hold your phone securely. Start an attempt, let the phone rest, make a
@@ -566,7 +357,7 @@ function Support() {
       <section>
         <h2>Sound credits</h2>
         <p>
-          Glass crack is an original Degree sound. The optional Faaa… sound in
+          Glass crack and Paper fold are original Degree sounds. The optional Faaa… sound in
           the upcoming update uses “Fah” Scream, sound 3591, published by
           BigSoundBank under CC0.
         </p>
