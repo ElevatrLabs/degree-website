@@ -260,7 +260,7 @@ function Privacy() {
         <strong>Version information</strong>
         <p>
           Degree 1.2 adds paired wallpapers in TestFlight; 1.1 introduces advertising and optional usage analytics. This policy
-          covers both versions, including the TestFlight preview and the separate 1.1 update awaiting App Review. Degree
+          covers both versions, including the TestFlight preview. From 1.2 build 5, advertising requires Apple tracking permission. Degree
           1.0 remains ad-free and does not include analytics.
         </p>
       </div>
