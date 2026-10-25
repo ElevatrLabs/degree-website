@@ -4,7 +4,7 @@
   "sections": [
     {
       "title": "Versions covered",
-      "text": "This policy covers Degree 1.1 and later. Version 1.2 adds paired wallpapers in TestFlight; version 1.1 is a separate update pending App Review. Degree 1.0 does not contain advertising or analytics. Advertising and optional analytics apply from version 1.1; wallpaper-specific practices apply from version 1.2."
+      "text": "This policy covers Degree 1.1 and later. Degree 1.0 does not contain advertising or analytics. Version 1.2 adds paired wallpapers in TestFlight. From version 1.2 build 5, Apple tracking permission is required before Degree starts its ad consent flow or loads ads. Earlier builds did not include this ATT permission gate."
     },
     {
       "title": "Your readings stay on your device",
@@ -12,7 +12,7 @@
     },
     {
       "title": "Advertising",
-      "text": "Degree uses Google AdMob and Google’s User Messaging Platform to show banner and full-screen ads and manage consent. At most one full-screen ad can appear per app launch, before the first wallpaper preview, game or Live Activity start (wallpaper previews from version 1.2). Shortcut setup, background shortcuts and fold transitions do not trigger full-screen ads. If an ad is unavailable, the feature remains usable. Degree requests non-personalized ads, disables Google’s publisher first-party ID, and does not request access to the advertising identifier through App Tracking Transparency. Non-personalized advertising still involves data processing: Google may receive IP addresses (which can indicate approximate location), device or app identifiers, ad impressions and interactions, crash logs, and performance information for ad delivery, fraud prevention, measurement and diagnostics. Consent messages appear where configured and required. When available, change your choices using Ad privacy options in Privacy & support. If the privacy check fails, Degree remains usable with ads paused. Google processes information under its own privacy policies, available at policies.google.com/privacy and policies.google.com/technologies/partner-sites."
+      "text": "Degree uses Google AdMob for banner and full-screen ads and Google’s User Messaging Platform for regional privacy choices. From version 1.2 build 5, Degree first asks for Apple’s App Tracking Transparency permission. Google’s consent flow and ad SDK do not start unless iOS reports that tracking is authorized. If permission is declined, restricted or undecided, Degree does not load ads and all features remain available. After authorization, the regional privacy check must also permit ad requests. Degree requests non-personalized ads, disables Google’s publisher first-party ID and applies restricted data processing. Google may use the device advertising identifier and ad interactions for advertising measurement across apps and websites. Google may also receive IP addresses (which can indicate approximate location), device or app identifiers, impressions, interactions, crash logs and performance information for delivery, fraud prevention, measurement and diagnostics. At most one full-screen ad opportunity occurs per launch before the first wallpaper preview, game or Live Activity. Shortcut setup, background shortcuts and fold transitions never trigger full-screen ads. Change Apple tracking permission in iOS Settings and regional choices using Ad privacy options in Privacy & support when available. These are separate permissions; regional consent does not override Apple’s choice. An unavailable ad or failed privacy check never blocks features. Google’s policies are available at policies.google.com/privacy and policies.google.com/technologies/partner-sites."
     },
     {
       "title": "Optional usage analytics",
@@ -36,7 +36,7 @@
     },
     {
       "title": "Permissions and choices",
-      "text": "Device motion is used to score a gentle flick and the return to rest. If motion readings are unavailable or restricted, Degree shows an unavailable message. The fold features need a supported folding iPhone and iOS 27.1 or later. You decide whether to start a Live Activity, import a shortcut, allow its actions, or enable an automation. From version 1.2, saving a wallpaper through the system share sheet may request permission to add an image to Photos. Degree does not read your photo library. No microphone, camera or location permission is requested."
+      "text": "Device motion is used to score a gentle flick and the return to rest. If motion readings are unavailable or restricted, Degree shows an unavailable message. The fold features need a supported folding iPhone and iOS 27.1 or later. You decide whether to start a Live Activity, import a shortcut, allow its actions, or enable an automation. From version 1.2, saving a wallpaper through the system share sheet may request permission to add an image to Photos. Degree does not read your photo library. No microphone, camera or location permission is requested. From version 1.2 build 5, an Apple tracking permission prompt precedes any advertising setup. Its answer does not enable or disable optional usage analytics, which requires a separate choice."
     },
     {
       "title": "Contact and external services",
